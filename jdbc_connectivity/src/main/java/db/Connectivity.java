@@ -18,7 +18,8 @@ public class Connectivity {
                 "jdbc:mysql://localhost:3306/java_training_db",
                 "root",
                 "password"
-        );
+        ); // it loads the driver into memory
+        connection.setAutoCommit(false);
 
         System.out.println("---Connected to MySQL Successfully---");
     }
