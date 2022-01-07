@@ -23,10 +23,11 @@ public class Main {
             //  System.out.println("Employee Created Successfully");
             //}
 
-            //service.find();
-            // service.findEmployeeByName("pqr");
-
-            service.txnDemo(59, "kol", Date.valueOf(LocalDate.now()), true, 1);
+           // service.find();
+           // service.findEmployeeByName("pqr");
+            service.update();
+            service.delete();
+           // service.txnDemo(50, "kol", Date.valueOf(LocalDate.now()), true, 59);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
