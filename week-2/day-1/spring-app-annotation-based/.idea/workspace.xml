@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2d08b2b-66c2-458c-9703-3aef9502c559" name="Changes" comment="spring core : component scanning and autowiring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/car/Bwm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ani/logging/CarLogger.java" afterDir="false" />
+    <list default="true" id="b2d08b2b-66c2-458c-9703-3aef9502c559" name="Changes" comment="spring aop : detailed understanding of aspect oriented&#10;programming">
       <change beforePath="$PROJECT_DIR$/../../../Assignment/banking_system/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/banking_system/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Assignment/banking_system/src/main/java/service/DbServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/banking_system/src/main/java/service/DbServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Assignment/banking_system/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/banking_system/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Assignment/banking_system/target/classes/service/DbServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Assignment/banking_system/target/classes/service/DbServices.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ani/config/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641796474259</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spring aop : detailed understanding of aspect oriented&#10;programming">
+      <created>1641802171450</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641802171450</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring core : component scanning and autowiring" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring core : component scanning and autowiring" />
+    <MESSAGE value="spring aop : detailed understanding of aspect oriented&#10;programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring aop : detailed understanding of aspect oriented&#10;programming" />
   </component>
 </project>
