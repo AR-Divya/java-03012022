@@ -4,24 +4,24 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+import com.mysql.cj.jdbc.Driver;
+
 public class Connectivity {
 
     private final Connection connection;
 
-    public Connectivity() throws ClassNotFoundException, SQLException {
-        // it loads the driver into memory
-        Class.forName("com.mysql.cj.jdbc.Driver");
+    public Connectivity() throws SQLException {
 
-        // mysql -u root -p
-        // here you are giving username and password for connectivity
+        new Driver(); // initialize the mysql driver
+
         connection = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/bank",
                 "root",
                 "password"
-        ); // it loads the driver into memory
-        connection.setAutoCommit(false);
+        ); // trying to make a connectivity
 
-        System.out.println("---Connected to MySQL Successfully---");
+        connection.setAutoCommit(false); // enabling txn management
+        System.out.println("---- Connected to MySQL Successfully ----");
     }
 
     public Connection getConnection() {
