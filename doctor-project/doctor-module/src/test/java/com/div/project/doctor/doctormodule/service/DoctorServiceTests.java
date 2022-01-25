@@ -1,6 +1,5 @@
 package com.div.project.doctor.doctormodule.service;
 
-
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,6 +11,13 @@ public class DoctorServiceTests {
 
     @Autowired
     private DoctorServiceImpl service;
+
+    @DisplayName("Finding permanent Doctor by specialization")
+    @Test
+    public void testDoctorFindBySpec(){
+        var op = service.permanentDoctorForGivenSpecialization("neurology");
+        Assertions.assertNotNull(op.get(1));
+    }
 
     @DisplayName("Finding Doctor by locality")
     @Test

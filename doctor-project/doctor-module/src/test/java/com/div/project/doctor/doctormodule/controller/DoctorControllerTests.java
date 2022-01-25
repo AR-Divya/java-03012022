@@ -43,7 +43,7 @@ public class DoctorControllerTests {
     }*/
 
 
-    @DisplayName("Get - Doctor - Checking Object Is non null")
+    @DisplayName("Get - Checking Object is not null")
     @Test
     public void testGetMethod(){
 
@@ -52,5 +52,12 @@ public class DoctorControllerTests {
         Doctor doctor = template.getForObject(url,Doctor.class);
 
         Assertions.assertNotNull(doctor);
+    }
+
+    @DisplayName("Delete - Deleting doctor")
+    @Test
+    public void testDeleteMethod(){
+        String url = "http://" + "localhost"+":"+port+"/doctor";
+        template.delete(url);
     }
 }
