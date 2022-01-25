@@ -10,11 +10,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.client.RestTemplate;
-
-
-
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class DoctorControllerTests {
@@ -25,8 +20,7 @@ public class DoctorControllerTests {
     @LocalServerPort
     private int port;
 
-/*
-    @DisplayName("Testing Post method for saving")
+    @DisplayName("Post - Testing register Doctor")
     @Test
     public void testPostMethod(){
         String url = "http://"+"localhost"+":"+port+"/doctor";
@@ -39,8 +33,8 @@ public class DoctorControllerTests {
         doctor.setVisit(true);
 
         var re =template.postForEntity(url,doctor,Doctor.class);
-        Assertions.assertEquals(HttpStatus.OK);
-    }*/
+        Assertions.assertEquals(HttpStatus.OK,re.getStatusCode());
+    }
 
 
     @DisplayName("Get - Checking Object is not null")
